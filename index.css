@@ -168,13 +168,13 @@
     padding: 20px;
 }
 .footer {
-    position: fixed;
     background-color: black;
     margin: auto;
     height: auto;
     width: 100%;
     padding: 10px 0px;
     bottom: 0px;
+    left: 0px;
 }
 .footer-social-icons ul {
     margin: 0px;
@@ -199,3 +199,40 @@
 .fa:hover {
     opacity: 0.7;
 }
+.jobs {
+    padding-top: 5%; 
+    padding-left: 20%;
+    padding-bottom: 10%;
+}
+.jobs-img {
+    height: auto;
+    width: 200px;
+    padding: 3%;
+    border-radius: 50%;
+}
+.jobs-title {
+    float: right;
+    text-align: center;
+    padding-right: 30%;
+    padding-top: 5%;
+}
+.center {
+    text-align: center;
+}
+ul li { 
+    padding: 5px 0px; 
+}
+/* ---- ABOUT PAGE ---- */
+.about-text {
+    text-align: justify;
+    font-family: monospace;
+    font: 3em;
+    line-height: 2;
+}
+hr { 
+    background-color:black;
+    display:block;
+    width: 100%;               
+    border: 10px;
+    height: 1px;
+  }
