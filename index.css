@@ -5,7 +5,6 @@
     width: 100%;
     z-index: 1;
 }
-
 .navbar {
     overflow: hidden;
     display: block;
@@ -66,6 +65,118 @@
     padding: 1rem;
     width: 45%;
 }
+.img {
+    color: #111111;
+    overflow: hidden;
+    object-fit: cover;
+    vertical-align: middle;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.heading {
+    position: relative;
+    display: flex;
+    background-clip: padding-box;
+    background-origin: padding-box;
+    text-align: left;
+    border-left: 0!important;
+    border-right: 0!important;
+    padding: 20% 0%;
+}
+.heading-text {
+    position: relative;
+    text-align: center;
+    font-family: 'Playfair Display', serif !important;
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: 0.8;
+}
+.inputs {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.footer {
+    background-color: black;
+    margin: auto;
+    height: auto;
+    width: 100%;
+    padding: 10px 0px;
+    bottom: 0px;
+    left: 0px;
+}
+.footer-social-icons ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.footer-social-icons ul li {
+    display: inline-block;
+    background: white;
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px;
+    border-radius: 100%;
+}
+.footer-social-icons ul li a {
+    color: black;
+    font-size: 15px;
+}
+.footer-social-icons ul li a i {
+    line-height: 30px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+/* ---- PROJECT PAGE ---- */
+.art {
+    display: inline;
+    width: 50%;
+}
+/* ---- EXPERIENCE PAGE ---- */
+.jobs {
+    padding-top: 5%; 
+    padding-left: 20%;
+    padding-bottom: 10%;
+}
+.jobs-img {
+    height: auto;
+    width: 200px;
+    padding: 3%;
+    border-radius: 50%;
+}
+.jobs-title {
+    float: right;
+    text-align: center;
+    padding-right: 30%;
+    padding-top: 5%;
+}
+.center {
+    text-align: center;
+}
+ul li { 
+    padding: 5px 0px; 
+}
+/* ---- ABOUT PAGE ---- */
+.about-text {
+    text-align: justify;
+    font-family: monospace;
+    font: 3em;
+    line-height: 2;
+}
+hr { 
+    background-color:black;
+    display:block;
+    width: 100%;               
+    border: 10px;
+    height: 1px;
+  }
+
+.aboutme1 {
+    background-image: url(images/aboutme1.jpg);
+    background-position: 50% 80%;
+}
 .align-middle {
     position: relative;
     display: flex;
@@ -108,36 +219,6 @@
     flex: 50%;
     max-width: 50%;
 }
-.img {
-    color: #111111;
-    overflow: hidden;
-    object-fit: cover;
-    vertical-align: middle;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.aboutme1 {
-    background-image: url(images/aboutme1.jpg);
-    background-position: 50% 80%;
-}
-.heading {
-    position: relative;
-    display: flex;
-    background-clip: padding-box;
-    background-origin: padding-box;
-    text-align: left;
-    border-left: 0!important;
-    border-right: 0!important;
-    padding: 20% 0%;
-}
-.heading-text {
-    position: relative;
-    text-align: center;
-    font-family: 'Playfair Display', serif !important;
-    font-size: 6rem;
-    font-weight: 400;
-    line-height: 0.8;
-}
 .container-contact {
     position: relative;
     margin: 6% 30%;
@@ -162,77 +243,46 @@
     max-width: 100%;
     padding: 30px;
 }
-.inputs {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+/* ---- PROJECT PAGE ---- */
+.row {
+    margin: 2% 15%;
 }
-.footer {
-    background-color: black;
-    margin: auto;
-    height: auto;
-    width: 100%;
-    padding: 10px 0px;
-    bottom: 0px;
-    left: 0px;
+.project-header {
+    margin-top: 7%;
 }
-.footer-social-icons ul {
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
-}
-.footer-social-icons ul li {
+.project-header-text {
+    background-color: #000;
+    color: #fff;
     display: inline-block;
-    background: white;
-    width: 30px;
-    height: 30px;
-    margin: 0px 10px;
-    border-radius: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
 }
-.footer-social-icons ul li a {
-    color: black;
-    font-size: 15px;
+.project-entries {
+    color: #000!important;
+    background-color: #fff!important;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+    margin: 16px!important;
 }
-.footer-social-icons ul li a i {
-    line-height: 30px;
+.project-container {
+    padding: 1em 15%;
 }
-.fa:hover {
-    opacity: 0.7;
+.project-entries-img {
+    float:left;
+    max-width: 50%;
+    max-height: auto;
 }
-.jobs {
-    padding-top: 5%; 
-    padding-left: 20%;
-    padding-bottom: 10%;
+.project-entries-title {
+    
 }
-.jobs-img {
-    height: auto;
-    width: 200px;
-    padding: 3%;
-    border-radius: 50%;
+.project-entries-text {
+    
 }
-.jobs-title {
+.read-more-button {
+    color: #000!important;
+    background-color: #fff!important;
+    border: 3px solid #ccc!important;
     float: right;
-    text-align: center;
-    padding-right: 30%;
-    padding-top: 5%;
+    padding: 5px 15px!important;
 }
-.center {
-    text-align: center;
-}
-ul li { 
-    padding: 5px 0px; 
-}
-/* ---- ABOUT PAGE ---- */
-.about-text {
-    text-align: justify;
-    font-family: monospace;
-    font: 3em;
-    line-height: 2;
-}
-hr { 
-    background-color:black;
-    display:block;
-    width: 100%;               
-    border: 10px;
-    height: 1px;
-  }
+
