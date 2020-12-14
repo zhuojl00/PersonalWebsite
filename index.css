@@ -36,10 +36,6 @@
     margin-right: auto;
     letter-spacing: 4px;
 }
-.image {
-    height: auto;
-    max-width: 100%;
-}
 .header {
     position: absolute;
     margin-top: 16px!important;
@@ -129,11 +125,27 @@
 .fa:hover {
     opacity: 0.7;
 }
-/* ---- PROJECT PAGE ---- */
-.art {
-    display: inline;
-    width: 50%;
+/* ---- INDEX PAGE ---- */
+.index-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 20%;
+    overflow: hidden;
 }
+.column {
+    float: left;
+    overflow: hidden;
+    width: 32%;
+    height: auto;
+    padding: 5px;
+}
+.box::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 /* ---- EXPERIENCE PAGE ---- */
 .jobs {
     padding-top: 5%; 
@@ -272,17 +284,48 @@ hr {
     max-width: 50%;
     max-height: auto;
 }
-.project-entries-title {
-    
-}
-.project-entries-text {
-    
-}
 .read-more-button {
     color: #000!important;
     background-color: #fff!important;
     border: 3px solid #ccc!important;
     float: right;
     padding: 5px 15px!important;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+  /* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+  
+  /* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
